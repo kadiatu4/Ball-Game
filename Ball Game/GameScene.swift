@@ -154,8 +154,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
             ball.physicsBody?.velocity.dy = 400
         }
         
-        if ball.position.y == 400 {
-            ball.position.y = 400
+        if ball.position.y >= 280 {
+            ball.position.y = 280
         }
         
         if ball.position.y == onPlatform.position.y{
